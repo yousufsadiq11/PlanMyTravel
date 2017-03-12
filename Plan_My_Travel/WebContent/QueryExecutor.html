@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Query Executor</title>
+</head>
+<body>
+<p>
+<form action="queryExecutor">
+Query Type:
+  <select name="queryType">
+    <option value="insert">insert</option>
+    <option value="delete">delete</option>
+    <option value="update">update</option>
+    <option value="select">select</option>
+    <option value="procedure">procedure</option>
+  </select>
+  <br>
+  <br>
+  Table Name(only in case of select statement):
+  <select name="tableName">
+    <option value="select">--select--</option>
+    <option value="admin">admin</option>
+    <option value="airlines">airlines</option>
+    <option value="booked_flights">booked_flights</option>
+    <option value="card_details">card_details</option>
+    <option value="cities">cities</option>
+    <option value="country">country</option>
+    <option value="flight_details">flight_details</option>
+    <option value="flight_info">flight_info</option>
+    <option value="meal_plan">meal_plan</option>
+    <option value="passenger_details">passenger_details</option>
+    <option value="registered_user">registered_user</option>
+  </select>
+  <br>
+  <br>
+  Table Name(only in case of procedure):
+  <select name="procedureName">
+    <option value="select">--select--</option>
+    <option value="book_flight">book_flight</option>
+    <option value="insert_admin">insert_admin</option>
+    <option value="delete_meal_plan">delete_meal_plan</option>
+    <option value="delete_flight_details">delete_flight_details</option>
+    <option value="delete_booking_details">delete_booking_details</option>
+    <option value="insert_booking_details">insert_booking_details</option>
+    <option value="insert_card_details">insert_card_details</option>
+    <option value="insert_meal_plan">insert_meal_plan</option>
+    <option value="insert_flight_details">insert_flight_details</option>
+    <option value="insert_passenger_details">insert_passenger_details</option>
+    <option value="insert_registered_user">insert_registered_user</option>
+  </select>
+  <br>
+  <br>
+  <textarea rows="4" cols="50" name="queryTextbox"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</p>
+</body>
+</html>

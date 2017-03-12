@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>planmytravel1</display-name>
+  <welcome-file-list>
+    <welcome-file>index1.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.uncc.planmytravel.servlet.servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Adminadd</servlet-name>
+    <servlet-class>com.uncc.planmytravel.servlet.AddFlightDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adminadd</servlet-name>
+    <url-pattern>/AddFlightDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Adminloginpage</servlet-name>
+    <servlet-class>com.uncc.planmytravel.servlet.AdminLoginPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adminloginpage</servlet-name>
+    <url-pattern>/AdminLoginPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>queryExecutor</servlet-name>
+    <servlet-class>com.uncc.planmytravel.servlet.QueryExecutorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryExecutor</servlet-name>
+    <url-pattern>/queryExecutor</url-pattern>
+  </servlet-mapping>
+</web-app>
