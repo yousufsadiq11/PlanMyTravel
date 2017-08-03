@@ -1,4 +1,4 @@
-# PlanMyTravel
+# PlanMyTravel(Flight Booking Web Application)
 Technologies / Frameworks used:
 JAVA EE, HTML, CSS, bootstrap, JavaScript, JSP - Servlet, MySQL, GIT
 
